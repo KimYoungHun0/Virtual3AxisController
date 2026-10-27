@@ -64,7 +64,7 @@ sequenceDiagram
 
 ---
 
-## 💡 주요 구현 기능 (5대 핵심 요소)
+## 주요 구현 기능 (5대 핵심 요소)
 
 1. **수동 제어 (Manual Mode) & Homing**
 * X, Y, Z축 수동 JOG 이동 및 물리적 간섭을 방지하는 안전 Homing(원점 복귀) 시퀀스 구현
@@ -93,10 +93,8 @@ sequenceDiagram
 
 ---
 
-## 🚀 실행 방법
+## 실행 방법
 
 1. [OpenModSim](https://github.com/sanny32/OpenModSim/releases) 실행 후 `Modbus TCP` 통신 포트 `502` 개방
 2. `Setup -> Slave Definition`에서 `Holding Register` 주소 0번부터 20개 할당
 3. Visual Studio 2022에서 솔루션 빌드 및 실행 (`F5`)
-
-```
