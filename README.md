@@ -45,7 +45,7 @@ sequenceDiagram
     Note over VM,SM: [카메라 가동 중] 비전 스레드의 이벤트 발생
     VM->>VM: OpenCV 로직 (파란색 추적 및 무게중심 계산)
 
-    Note over VM,UI: C# Delegate Multicasting (UI를 거치지 않고 다이렉트 전송)
+    Note over VM,UI: C#35; Delegate Multicasting (UI를 거치지 않고 다이렉트 전송)
     VM-->>SM: [이벤트 1] SM.UpdateTargetFromVision(cx, cy) 다이렉트 호출
     SM->>SM: 비즈니스 로직 (기계 좌표계 스케일업 및 TargetX, Y 갱신)
     
